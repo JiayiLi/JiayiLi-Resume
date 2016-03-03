@@ -1,0 +1,1134 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+ul,li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+html {
+    font-family: "Helvetica" !important;
+    font-size: 20px;
+}
+
+
+/* topbar css */
+
+#topbar {
+    width: 100%;
+    height: 3rem;
+    background-color:#2C3E50;
+    color: #ffffff;
+    font-size: 1.4rem;
+    z-index: 999;
+    line-height: 3rem;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    display: none;
+}
+
+nav {
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+    display: box;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-box;
+    display: -o-box;
+    box-flex: 1;
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -ms-box-flex: 1;
+    -o-box-flex: 1;
+    min-width: 640px;     /*最小值640px；*/
+}
+
+.topbar-left>a {
+    color: #fff;
+
+}
+
+.topbar-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.topbar-right li {
+    float: left;
+    width: 3.5rem;
+    text-align: center;
+}
+
+.topbar-right li>a {
+    color: #ffffff;
+    font-size: 1.2rem;
+}
+
+.topbar-right li>a:hover {
+    color: #F4BD00;
+}
+
+
+/* firstPage css */
+
+#firstPage {
+    width: 100%;
+    height: 40rem;
+    background: url(../images/firstPage.jpg) no-repeat;
+    background-size: 100% 100%; 
+    position: relative;
+    min-width: 640px;
+    margin-top: -35px;
+}
+
+#firstPage .intro {
+    width: 640px;
+    height: 15rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -10rem;
+    margin-left: -320px;
+    text-align: center;
+    display: box;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-box;
+    display: -o-box;
+    box-flex: 1;
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -ms-box-flex: 1;
+    -o-box-flex: 1;
+}
+
+#firstPage .intro h1 {
+    height: 70px;
+    width: 640px;
+    color: #2C2D27;
+    font-size: 3.5rem;
+    text-align: center;
+} 
+
+#firstPage .intro h2 {
+    width: 640px;
+    height: 53px;
+    font-size: 2.25rem;
+    color: #D24A0C;
+    position: absolute;
+    top: 86px;
+    left: 0px;
+    text-align: center;
+}
+
+#firstPage .intro p {
+    width: 640px;
+    height: 70px; 
+    color: #29282E;
+    font-size: 1.5rem;
+    text-align: center;
+    position: absolute;
+    top: 194px;
+    left: 0px;
+
+} 
+
+/*第一个页面窗口宽度在640px以下*/
+@media all and (max-width: 640px) {
+    #firstPage{
+        width: 100%;
+        height: 40rem;
+        background: url(../images/firstPage.jpg) no-repeat;
+        background-size: 100% 100%; 
+        position: relative;
+        min-width: 640px;
+        margin-top: -35px;
+    }
+
+    #firstPage .intro {
+        width: 350px;
+        height: 300px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -150px;
+        margin-left: -175px;
+        text-align: center;
+        display: box;
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-box;
+        display: -o-box;
+        box-flex: 1;
+        -webkit-box-flex: 1;
+        -moz-box-flex: 1;
+        -ms-box-flex: 1;
+        -o-box-flex: 1;
+        min-width: 350px;
+    }
+
+    #firstPage .intro h1 {
+        height: 70px;
+        width: 350px;
+        color: #2C2D27;
+        font-size: 3.5rem;
+        text-align: center;
+    } 
+
+    #firstPage .intro h2 {
+        width: 350px;
+        height: 53px;
+        font-size: 2.25rem;
+        color: #D24A0C;
+        position: absolute;
+        top: 86px;
+        left: 0px;
+        text-align: center;
+    }
+
+    #firstPage .intro p {
+        width: 350px;
+        height: 70px; 
+        color: #29282E;
+        font-size: 1.5rem;
+        text-align: center;
+        position: absolute;
+        top: 194px;
+        left: 0px;
+
+    } 
+}
+
+
+/* about css */
+#aboutMe {
+    width: 100%;
+    height: 45rem;
+    background: url(../images/about.jpg) no-repeat;
+    background-size: 100% 100%; 
+    position: relative;
+    min-width: 1230px;
+} 
+
+
+.aboutMe-title h2 {
+    width: 5.8rem;
+    height: 3.25rem;
+    position: absolute;
+    top: 130px;
+    left: 50%;
+    margin-left: -58px;
+    color: #ffffff;
+    font-size: 2.8rem;
+    font-weight: 1000;
+    text-align: center;
+}
+
+.aboutMe-title hr {
+    height: 0.2rem;
+    width: 15.9rem;
+    position: absolute;
+    top: 210px;
+    left: 50%;
+    margin-left: -7.95rem;
+    text-align: center;
+    background: #16EACD;
+    border: 0;
+}
+
+.aboutMe2 {
+    width: 61.5rem;
+    height: 20.2rem;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    margin-left: -615px;
+}
+
+.aboutMe2>div {
+    float: left;
+    width: 15rem;
+    height: 20rem;
+    margin-left: 5px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+.aboutMe2 h1 {
+    cursor: pointer;
+}
+
+/* 教育背景 */
+
+#edu {
+    background: url(../images/1.png) no-repeat;
+    background-size: 184px 126px;
+    background-color: rgba(255, 255, 255, 0.75);
+    background-position: 62px 61px;
+    position: relative;  
+}
+
+#edu h1 {
+    position: absolute;
+    bottom: 68px;
+    left: 66px;
+    font-size: 30px;
+    color: #050404;
+    text-align: center;
+    line-height: 60px;
+    width: 170px;
+    height: 60px;
+    border: 2px solid #050404;
+    border-radius: 8px;
+}
+
+#rel {
+    background: url(../images/2.png) no-repeat;
+    background-size: 184px 126px;
+    background-color: rgba(255, 255, 255, 0.75);
+    background-position: 62px 61px;
+    position: relative;
+}
+
+#rel h1 {
+    position: absolute;
+    bottom: 68px;
+    left: 66px;
+    font-size: 30px;
+    color: #050404;
+    text-align: center;
+    line-height: 60px;
+    width: 170px;
+    height: 60px;
+    border: 2px solid #050404;
+    border-radius: 8px;
+} 
+
+#prize {
+    background: url(../images/3.png) no-repeat;
+    background-size: 184px 126px;
+    background-color: rgba(255, 255, 255, 0.75);
+    background-position: 62px 61px;
+    position: relative;
+}
+
+#prize h1 {
+    position: absolute;
+    bottom: 68px;
+    left: 66px;
+    font-size: 30px;
+    color: #050404;
+    text-align: center;
+    line-height: 60px;
+    width: 170px;
+    height: 60px;
+    border: 2px solid #050404;
+    border-radius: 8px;
+}
+
+#skills {
+    background: url(../images/4.png) no-repeat;
+    background-size: 184px 126px;
+    background-color: rgba(255, 255, 255, 0.75);
+    background-position: 62px 61px;
+    position: relative;
+}
+
+#skills h1 {
+    position: absolute;
+    bottom: 68px;
+    left: 66px;
+    font-size: 30px;
+    color: #050404;
+    text-align: center;
+    line-height: 60px;
+    width: 170px;
+    height: 60px;
+    border: 2px solid #050404;
+    border-radius: 8px;
+}
+
+#edu h1:hover {
+    position: absolute;
+    bottom: 60px;
+    left: 58px;
+    color: #050404;
+    text-align: center;
+    line-height: auto;
+    border: none;
+    background-color: #16EACD;
+    font-size: 35px;
+    padding: 2%;
+    transition: all 0.3s;
+}
+
+#rel h1:hover {
+    position: absolute;
+    bottom: 60px;
+    left: 58px;
+    color: #050404;
+    text-align: center;
+    line-height: auto;
+    border: none;
+    background-color: #16EACD;
+    font-size: 35px;
+    padding: 2%;
+    transition: all 0.3s;
+}
+
+#prize h1:hover {
+    position: absolute;
+    bottom: 60px;
+    left: 58px;
+    color: #050404;
+    text-align: center;
+    line-height: auto;
+    border: none;
+    background-color: #16EACD;
+    font-size: 35px;
+    padding: 2%;
+    transition: all 0.3s;
+}
+
+#skills h1:hover {
+    position: absolute;
+    bottom: 60px;
+    left: 58px;
+    color: #050404;
+    text-align: center;
+    line-height: auto;
+    border: none;
+    background-color: #16EACD;
+    font-size: 35px;
+    padding: 2%;
+    transition: all 0.3s;
+}
+
+/*第二页窗口宽度在640px以上，1230px以下*/
+@media all and (min-width: 640px) and (max-width: 1230px) {
+    #aboutMe {
+        width: 100%;
+        height: 45rem;
+        background: url(../images/about.jpg) no-repeat;
+        background-size: 100% 100%; 
+        position: relative;
+        min-width: 720px;
+    } 
+
+    .aboutMe2 {
+        width: 720px;
+        height: 516px;
+        position: absolute;
+        top: 31%;
+        left: 50%;
+        margin-left: -350px;
+    }
+
+
+    .aboutMe2>div {
+        width: 350px;
+        height: 250px;
+        margin-bottom: 5px;
+        border-radius: 5px;
+        border: 1px solid black;
+    }
+
+    #edu {
+        background: url(../images/1.png) no-repeat;
+        background-size: 150px 103px;
+        background-color: rgba(255, 255, 255, 0.75);
+        background-position: 96px 44px;
+        position: relative;  
+    }
+
+    #edu h1 {
+        width: 150px;
+        height: 45px;
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        margin-left: -75px;
+        font-size: 1.4rem;
+        color: #050404;
+        text-align: center;
+        line-height: 2.25rem;
+        border: 2px solid #050404;
+        border-radius: 8px;
+     }
+
+    #rel {
+        background: url(../images/2.png) no-repeat;
+        background-size: 150px 103px;
+        background-color: rgba(255, 255, 255, 0.75);
+        background-position: 96px 44px;
+        position: relative;  
+    }
+
+    #rel h1 {
+        width: 150px;
+        height: 45px;
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        margin-left: -75px;
+        font-size: 1.4rem;
+        color: #050404;
+        text-align: center;
+        line-height: 2.25rem;
+        border: 2px solid #050404;
+        border-radius: 8px;
+     }
+
+    #prize {
+        background: url(../images/3.png) no-repeat;
+        background-size: 150px 103px;
+        background-color: rgba(255, 255, 255, 0.75);
+        background-position: 96px 44px;
+        position: relative;  
+    }
+
+    #prize h1 {
+        width: 150px;
+        height: 45px;
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        margin-left: -75px;
+        font-size: 1.4rem;
+        color: #050404;
+        text-align: center;
+        line-height: 2.25rem;
+        border: 2px solid #050404;
+        border-radius: 8px;
+     }
+
+    #skills {
+        background: url(../images/4.png) no-repeat;
+        background-size: 150px 103px;
+        background-color: rgba(255, 255, 255, 0.75);
+        background-position: 96px 44px;
+        position: relative;  
+    }
+
+    #skills h1 {
+        width: 150px;
+        height: 45px;
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        margin-left: -75px;
+        font-size: 1.4rem;
+        color: #050404;
+        text-align: center;
+        line-height: 2.25rem;
+        border: 2px solid #050404;
+        border-radius: 8px;
+     }
+
+    #edu h1:hover {
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        margin-left: -78px;
+        color: #050404;
+        text-align: center;
+        line-height: auto;
+        border: none;
+        background-color: #16EACD;
+        font-size: 1.75rem;
+        padding: 2%;
+        transition: all 0.3s;
+    }
+
+    #rel h1:hover {
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        margin-left: -78px;
+        color: #050404;
+        text-align: center;
+        line-height: auto;
+        border: none;
+        background-color: #16EACD;
+        font-size: 1.75rem;
+        padding: 2%;
+        transition: all 0.3s;
+    }
+
+    #prize h1:hover {
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        margin-left: -78px;
+        color: #050404;
+        text-align: center;
+        line-height: auto;
+        border: none;
+        background-color: #16EACD;
+        font-size: 1.75rem;
+        padding: 2%;
+        transition: all 0.3s;
+    }
+
+    #skills h1:hover {
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        margin-left: -78px;
+        color: #050404;
+        text-align: center;
+        line-height: auto;
+        border: none;
+        background-color: #16EACD;
+        font-size: 1.75rem;
+        padding: 2%;
+        transition: all 0.3s;
+    }
+
+}
+
+/*第二个页面窗口宽度在640以下*/
+@media all and (max-width: 640px) {
+    #aboutMe {
+        width: 100%;
+        height: 45rem;
+        background: url(../images/about.jpg) no-repeat;
+        background-size: 100% 100%; 
+        position: relative;
+        min-width: 640px;
+    } 
+
+    .aboutMe2 {
+        width: 420px;
+        height: 520px;
+        position: absolute;
+        top: 31%;
+        left: 50%;
+        margin-left: -210px;
+
+    }
+
+
+    .aboutMe2>div {
+        width: 200px;
+        height: 250px;
+        margin-bottom: 5px;
+        border-radius: 5px;
+        border: 1px solid black;
+    }
+
+    #edu {
+        background: url(../images/1.png) no-repeat;
+        background-size: 150px 103px;
+        background-color: rgba(255, 255, 255, 0.75);
+        background-position: 29px 44px;
+        position: relative;  
+    }
+
+    #edu h1 {
+        width: 150px;
+        height: 45px;
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        margin-left: -75px;
+        font-size: 1.4rem;
+        color: #050404;
+        text-align: center;
+        line-height: 2.25rem;
+        border: 2px solid #050404;
+        border-radius: 8px;
+     }
+
+    #rel {
+        background: url(../images/2.png) no-repeat;
+        background-size: 150px 103px;
+        background-color: rgba(255, 255, 255, 0.75);
+        background-position: 29px 44px;
+        position: relative;  
+    }
+
+    #rel h1 {
+        width: 150px;
+        height: 45px;
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        margin-left: -75px;
+        font-size: 1.4rem;
+        color: #050404;
+        text-align: center;
+        line-height: 2.25rem;
+        border: 2px solid #050404;
+        border-radius: 8px;
+     }
+
+    #prize {
+        background: url(../images/3.png) no-repeat;
+        background-size: 150px 103px;
+        background-color: rgba(255, 255, 255, 0.75);
+        background-position: 29px 44px;
+        position: relative;  
+    }
+
+    #prize h1 {
+        width: 150px;
+        height: 45px;
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        margin-left: -75px;
+        font-size: 1.4rem;
+        color: #050404;
+        text-align: center;
+        line-height: 2.25rem;
+        border: 2px solid #050404;
+        border-radius: 8px;
+     }
+
+    #skills {
+        background: url(../images/4.png) no-repeat;
+        background-size: 150px 103px;
+        background-color: rgba(255, 255, 255, 0.75);
+        background-position: 29px 44px;
+        position: relative;  
+    }
+
+    #skills h1 {
+        width: 150px;
+        height: 45px;
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        margin-left: -75px;
+        font-size: 1.4rem;
+        color: #050404;
+        text-align: center;
+        line-height: 2.25rem;
+        border: 2px solid #050404;
+        border-radius: 8px;
+     }
+
+    #edu h1:hover {
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        margin-left: -78px;
+        color: #050404;
+        text-align: center;
+        line-height: auto;
+        border: none;
+        background-color: #16EACD;
+        font-size: 1.75rem;
+        padding: 2%;
+        transition: all 0.3s;
+    }
+
+    #rel h1:hover {
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        margin-left: -78px;
+        color: #050404;
+        text-align: center;
+        line-height: auto;
+        border: none;
+        background-color: #16EACD;
+        font-size: 1.75rem;
+        padding: 2%;
+        transition: all 0.3s;
+    }
+
+    #prize h1:hover {
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        margin-left: -78px;
+        color: #050404;
+        text-align: center;
+        line-height: auto;
+        border: none;
+        background-color: #16EACD;
+        font-size: 1.75rem;
+        padding: 2%;
+        transition: all 0.3s;
+    }
+
+    #skills h1:hover {
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        margin-left: -78px;
+        color: #050404;
+        text-align: center;
+        line-height: auto;
+        border: none;
+        background-color: #16EACD;
+        font-size: 1.75rem;
+        padding: 2%;
+        transition: all 0.3s;
+    }
+
+}
+
+.masker {
+    background-color: #000;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    opacity: 0.7;
+    display: none;
+}
+
+.intro-close-icon i {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    background: url(../images/close.png);
+    position: fixed;
+    top: 115px;
+    left: 50%;
+    margin-left: 300px;
+    z-index: 100;
+    cursor: pointer;
+}
+
+
+.intro-imgs {
+    background: transparent;
+    width: 600px;
+    height: 358px;
+    position: fixed;
+    top: 150px;
+    left: 50%;
+    margin-left: -300px;
+    z-index: 99;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.introMasker {
+    display: none;
+}
+
+
+
+/*第三个页面：contact*/
+
+#contactMe {
+    width: 100%;
+    height: 800px;
+    background: url(../images/bg.jpg) no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 50% 0;
+    position: relative;
+    margin-top: -5px;
+    min-width: 700px;
+}
+
+.contactMe-wp {
+    width: 700px;
+    height: 330px;
+    position: absolute;
+    top: 240px;
+    left: 50%;
+    margin-left: -350px;
+}
+
+.contactMe-title h1 {
+    width: 700px;
+    height: 50px;
+    text-align: center;
+    line-height: 2.5rem;
+    color: #ffffff;
+    letter-spacing: 0.5rem;
+    font-size: 2rem;
+}
+
+.hr1 {
+    position: absolute;
+    top: 25px;
+    left: 10%;
+    height: 2px;
+    width: 126px;
+    background: rgb(255, 255, 255);
+    border: 0;
+}
+
+.hr2{
+    position: absolute;
+    top: 25px;
+    right: 14%;
+    height: 2px;
+    width: 126px;
+    background: rgb(255, 255, 255);
+    border: 0;
+}
+
+/*联系我左面*/
+
+.contentLeft {
+    width: 400px;
+    height: 240px;
+    position: absolute;
+    top: 100px;
+    left: 0px;
+}
+
+.contentLeft h2 {
+    color: #ffffff;
+    font-size: 1.5rem;
+}
+
+.contentLeft p {
+    color: #ffffff;
+    font-size: 1rem;
+    position: absolute;
+    top: 80px;
+    left: 0;
+}
+
+
+.contentLeft ul {
+    color: #ffffff;
+    font-size: 1rem;
+    position: absolute;
+    top: 114px;
+    left: 0;
+}
+
+.contentLeft li {
+    height: 40px;
+}
+
+.email span {
+    width: 200px;
+    text-align: center;
+    position: absolute;
+    top: -3px;
+    left: 30px;
+}
+
+.mobile span {
+    width: 137px;
+    text-align: center;
+    position: absolute;
+    top: 46px;
+    left: 37px;
+}
+
+.contentRight {
+    width: 222px;
+    height: 200px;
+    position: absolute;
+    top: 100px;
+    right: 0;
+}
+
+.contentRight h2 {
+    color: #ffffff;
+    font-size: 1.5rem;
+}
+
+.contentRight button {
+    background-color: transparent;
+    border: 1px solid #f4f5f6;
+    border-radius: 4px;
+    padding: 33px 38px;
+    color: #f4f5f6;
+    margin-top: 75px;
+    cursor: pointer;
+    margin-left: 28px;
+    font-size: 0.75rem;
+}
+
+.contentRight button:hover {
+    border: 1px solid #E87E04;
+    color: #E87E04;
+}
+
+
+.footer {
+    width: 700px;
+    height: 25px;
+    color: #ffffff;
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    margin-left: -350px;
+    text-align: center;
+    letter-spacing: 0.5rem;
+}
+
+/*第三个页面窗口小于640px*/
+@media all and (max-width: 640px) {
+    #contactMe {
+        width: 100%;
+        height: 800px;
+        background: url(../images/bg.jpg) no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: 50% 0px;
+        position: relative;
+        margin-top: -3px;
+        min-width: 640px;
+    }
+
+    .contactMe-wp {
+        width: 350px;
+        height: 470px;
+        position: absolute;
+        top: 240px;
+        left: 50%;
+        margin-left: -175px;
+    }
+
+    .contactMe-title h1 {
+        width: 350px;
+        height: 50px;
+        text-align: center;
+        line-height: 50px;
+        color: #ffffff;
+        letter-spacing: 0.5rem;
+        font-size: 2rem;
+        margin-left: 21px;
+    }
+
+    .hr1 {
+        position: absolute;
+        top: 25px;
+        left: -6%;
+        height: 2px;
+        width: 75px;
+        background: rgb(255, 255, 255);
+        border: 0;
+    }
+
+    .hr2{
+        position: absolute;
+        top: 25px;
+        right: -8%;
+        height: 2px;
+        width: 75px;
+        background: rgb(255, 255, 255);
+        border: 0;
+    }
+
+    .contentLeft {
+        width: 350px;
+        height: 300px;
+        position: absolute;
+        top: 80px;
+        left: 50%;
+        margin-left: -175px;
+    }
+
+    .contentLeft h2 {
+        text-align: center;
+        color: #ffffff;
+        font-size: 1.5rem;
+    }
+
+    .contentLeft p {
+        width: 350px;
+        text-align: center;
+        color: #ffffff;
+        font-size: 1rem;
+        position: absolute;
+        top: 65px;
+        left: 0;
+    }
+
+
+    .contentLeft ul {
+        color: #ffffff;
+        font-size: 1rem;
+        position: absolute;
+        top: 98px;
+        left: 55px; 
+    }
+
+    .contentLeft li {
+        height: 40px;
+    }
+
+    .email span {
+        width: 200px;
+        text-align: center;
+        position: absolute;
+        top: -3px;
+        left: 30px;
+    }
+
+    .mobile span {
+        width: 137px;
+        text-align: center;
+        position: absolute;
+        top: 46px;
+        left: 37px;
+    }
+
+    .contentRight {
+        width: 350px;
+        height: 190px;
+        position: relative;
+    }
+
+    .contentRight h2 {
+        width: 350px;
+        text-align: center;
+        color: #ffffff;
+        font-size: 1.5rem;
+        position: absolute;
+        bottom:-18px;
+        left: 50%;
+        margin-left: -175px;
+    }
+
+    .contentRight button {
+        background-color: transparent;
+        border: 1px solid #f4f5f6;
+        border-radius: 4px;
+        padding: 22px 38px;
+        color: #f4f5f6;
+        margin-top: 253px;
+        cursor: pointer;
+        margin-left: 86px;
+        font-size: 0.75rem;
+    }
+
+    .contentRight button:hover {
+        border: 1px solid #E87E04;
+        color: #E87E04;
+    }
+
+
+    .footer {
+        width: 350px;
+        height: 20px;
+        color: #ffffff;
+        position: absolute;
+        bottom: 30px;
+        left: 50%;
+        margin-left: -175px;
+        text-align: center;
+        letter-spacing: 0.5rem;
+    }
+
+}
