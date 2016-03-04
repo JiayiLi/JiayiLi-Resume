@@ -1,5 +1,7 @@
 !function (window, document, $, undefined){
 
+    $(window).load(function(){$("#loading").hide();})
+
     var $topbar = $('#topbar'),
         $home = $('.home'),
         $about = $('.about'),
@@ -48,7 +50,7 @@
     };
 
     var topbarShow = function (){
-        if (st >= 450) {
+        if (st >= 50) {
             $topbar.slideDown();
         }else {
             $topbar.slideUp();
