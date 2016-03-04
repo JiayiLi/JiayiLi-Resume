@@ -1,7 +1,5 @@
 !function (window, document, $, undefined){
 
-    $(window).load(function(){$("#loading").hide();})
-
     var $topbar = $('#topbar'),
         $home = $('.home'),
         $about = $('.about'),
