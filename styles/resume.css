@@ -826,6 +826,36 @@ nav {
     display: none;
 }
 
+@media all and (max-width: 640px) {
+    .intro-close-icon i {
+        display: inline-block;
+        width: 32px;
+        height: 32px;
+        background: url(../images/close.png);
+        position: fixed;
+        top: 268px;
+        left: 50%;
+        margin-left: 268px;
+        z-index: 100;
+        cursor: pointer;
+    }
+
+
+    .intro-imgs {
+        background: transparent;
+        width: 540px;
+        height: 358px;
+        position: fixed;
+        top: 300px;
+        left: 50%;
+        margin-left: -270px;
+        z-index: 99;
+        cursor: pointer;
+        overflow: hidden;
+    }
+
+}
+
 
 
 /*第三个页面：contact*/
