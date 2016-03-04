@@ -1024,7 +1024,7 @@ nav {
         width: 350px;
         height: 470px;
         position: absolute;
-        top: 240px;
+        top: 150px;
         left: 50%;
         margin-left: -175px;
     }
@@ -1154,7 +1154,7 @@ nav {
         height: 20px;
         color: #ffffff;
         position: absolute;
-        bottom: 30px;
+        bottom: 50px;
         left: 50%;
         margin-left: -175px;
         text-align: center;
